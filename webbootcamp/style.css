@@ -1,0 +1,142 @@
+
+
+body{
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-family:Tahoma;
+	font-size:1.0em;
+	color: #000000;
+	font-weight:50;
+}
+
+
+h1{
+	color:black;
+	font-family:Helvetica;
+	font-weight:500;
+	font-size: 7em;
+	margin:0 auto;
+	padding-top:100px;
+
+	
+}
+
+h2{
+	font-family:Helvetica;
+	font-weight:300;
+	font-size: 4em;
+
+
+}
+a{
+	text-decoration: none;
+	color: #828282;
+}
+a:hover {
+	color:#ffffff ;
+ }
+ 
+ 
+.link{
+	text-decoration: none;
+	font-family:Tahoma;
+	color: #000000;
+	font-size:1.5em;
+}
+.link:hover {
+	color:#0000FF ;
+ }
+ 
+
+ul
+{
+	width:1600px;
+	background-color: #000000;
+	text-decoration: none;
+	font-family:Tahoma;
+	font-size:0.8em;
+	font-type:bold;
+	list-style-type:none;
+	margin:0 auto;
+	padding:10px 30px 10px 30px;;
+	position: fixed;
+	overflow: auto;
+}
+
+li
+{display:inline;}
+
+
+.floatLeft{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 500px;
+	color: black;
+	float: left;	
+	margin: 0 0 0 200px;
+}
+
+.floatRight{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 400px;
+	color: black;
+	float: right;
+	margin: 0 300px 0 0;
+}
+
+
+.division{
+	background-color: #000000;
+	color: white;
+	height: 10px;
+	margin: 0 auto;
+	padding: 0px;
+
+}
+
+#intro{
+	background:url(images/e.jpg) 50% 0 no-repeat fixed; 
+	height: 900px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:200px;
+}
+
+#second{
+	background: url(images/walking.jpg) 50% 0 no-repeat fixed; 
+	height: 800px;
+	padding: 0;
+	overflow: hidden;
+}
+#third{
+	background: url(images/a.gif) 50% 0 no-repeat fixed;
+	padding: 100px 0 0 0;	
+	height: 900px;
+}
+#fourth{
+	background: url(images/thirdA.jpg) 50% 0 no-repeat fixed;
+	padding: 100px 0 0 0;	
+	height: 800px;
+	}
+#fifth{
+	background: url(images/fifthA.jpg) 50% 0 no-repeat fixed;
+	padding: 100px 0 0 0;	
+	height: 800px;
+	}
+	
+	
+#sixth{
+	background:#F8F8FF ;
+	height: 400px;
+	padding: 0 0 0 300px;
+	overflow: auto;
+}
+
+
+
+

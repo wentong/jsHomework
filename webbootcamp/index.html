@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>future</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
+<!-- load jquery, for $CHANGE BACKGROUND IMAGE -->
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+	
+	var backgroundSecond = ['url(images/walking.jpg)','url(images/b1.jpg)',];
+	var backgroundThird = ['url(images/a.gif)','url(images/b.gif)',];
+	var backgroundFourth=['url(images/thirdA.jpg)','url(images/thirdB.jpg)',];
+	var backgroundFifth=['url(images/fifthA.jpg)','url(images/fifthB.jpg)',];
+	var buttonSecondPrev=$('#buttonSecondPrev');
+	var buttonSecondNext=$('#buttonSecondNext');
+	var buttonThirdPrev=$('#buttonThirdPrev');
+	var buttonThirdNext=$('#buttonThirdNext');
+	var buttonFourthPrev=$('#buttonFourthPrev');
+	var buttonFourthNext=$('#buttonFourthNext');
+	var second=$('#second');
+	var third=$('#third');
+	var fourth=$('#fourth');
+	var fith=$('#fifth');
+	var frame=0;
+
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.3);
+	$('#third').parallax("50%", 0.1);
+	$('#fourth').parallax("50%",0.3);
+	$('#fifth').parallax("50%",0.6);
+	
+	$(".navIntro").click(function(){
+		$.scrollTo('#intro',800);	
+	});
+	$(".navSecond").click(function(){
+		$.scrollTo('#second',1200);	
+	});
+	$(".navThird").click(function(){
+		$.scrollTo('#third',1600);	
+	});
+	$(".navFourth").click(function(){
+		$.scrollTo('#fourth',2000);	
+	});
+	
+	$(".navFifth").click(function(){
+		$.scrollTo('#fifth',2400);	
+	});
+	
+	
+	function hover(button, over, out){
+		button.hover(function(){
+			button.attr('src', over);
+		}, function(){
+			button.attr('src', out);
+		});
+	}
+	
+	
+	hover(buttonSecondPrev, 'images/buttonPrevBlue.png', 'images/buttonPrev.png');
+	hover(buttonThirdPrev, 'images/buttonPrevBlue.png', 'images/buttonPrev.png');
+	hover(buttonFourthPrev, 'images/buttonPrevBlue.png', 'images/buttonPrev.png');
+	
+	hover(buttonSecondNext, 'images/buttonNextBlue.png', 'images/buttonNext.png');
+	hover(buttonThirdNext, 'images/buttonNextBlue.png', 'images/buttonNext.png');
+	hover(buttonFourthNext, 'images/buttonNextBlue.png', 'images/buttonNext.png');
+	
+	
+	
+	function changeBackground(obj, img){
+	console.log(obj);
+	console.log(img);
+		if(frame == 1){
+			frame = 0;
+			}else{
+			frame = 1;
+		}
+			
+		obj.css({
+			"background-image":img[frame]
+		});
+	}
+
+
+	
+	
+	
+	
+	buttonSecondPrev.click(function(){
+	console.log(second);
+		changeBackground(second, backgroundSecond);
+	});
+				
+	buttonSecondNext.click(function(){
+		changeBackground(second, backgroundSecond, 'next');
+	});
+	
+	buttonThirdPrev.click(function(){
+		changeBackground(third, backgroundThird, 'prev');
+	});
+				
+	buttonThirdNext.click(function(){
+		changeBackground(third, backgroundThird, 'next');
+	});
+	
+	buttonFourthPrev.click(function(){
+		changeBackground(fourth, backgroundFourth, 'prev');
+	});
+				
+	buttonFourthNext.click(function(){
+		changeBackground(fourth, backgroundFourth, 'next');
+	});
+	
+	buttonFifthPrev.click(function(){
+		changeBackground(fifth, backgroundFourth, 'prev');
+	});
+				
+	buttonFifthNext.click(function(){
+		changeBackground(fifth, backgroundFourth, 'next');
+	});
+	
+})
+</script>
+<!--the above script i have references via internet -->
+</head>
+<body>
+
+	<ul>
+		<li><a href="#" class="navIntro">INTRO</a></li>
+		<li><a href="#" class="navSecond">WALK MACHINE</a></li>
+		<li><a href="#"class="navThird">HEAD PHONE</a></li>
+		<li><a href="#" class="navFourth">GALLERY</a></li>
+		<li><a href="#" class="navFifth">PARK</a></li>
+		<li><a href="index_one.html">ELSE</a></li>
+	</ul>
+	
+	<div id="intro">
+	    <h1>3012</h1>
+		<p >This is a website shows design for future</p>
+		<p>All of the design come from students</p>
+		<p> </p>
+		<p>Try to scroll down</p>
+	</div>
+	
+	<div id="introandsecond">
+		<div class="division">
+		</div>
+	</div> 
+	
+	<div id="second">
+	
+		
+				<div class="floatLeft">
+					<h2>Walk Machine</h2>
+					<a href="#"class="link">By Max</a></li>
+					<p>It's a walk machine. It can walk in the city and won't bother on road traffic.Inside is residential area, which driver can live on night, and charge the electric. The middle bearing can rotates the each leg, in this way, the legs could climb the wall to save the ground space.
+					</p>
+				
+				<img src="images/buttonPrev.png" alt="" width="30" height="30"  id="buttonSecondPrev">
+				<img src="images/buttonNext.png" alt=""width="30" height="30"  id="buttonSecondNext">
+				</div>
+	</div> 
+	
+	<div id="secondandthird">
+		<div class="division">
+	    </div> 
+	</div> 
+	
+	<div id="third">
+	    	<div class="floatLeft">
+	        	<h2>Head Phone</h2>
+				<a href="#"class="link">By Max</a></li>
+				<p>It's a head phone. Inspired by bluetooth headset, this oneside head phone could be hang on the face. Besides, inspection equipment could be embeded inside and if the driver is using headphone when driving, it could detect that if driver is too distracted by head phone and alert.</p>
+			<img src="images/buttonPrev.png" alt="" width="30" height="30" id="buttonThirdPrev">
+			<img src="images/buttonNext.png" alt="" width="30" height="30" id="buttonThirdNext">
+	       </div>
+	</div> 
+	
+	<div id="thirdandfourth">
+		<div class="division">
+		</div> 
+	</div> 
+	
+	<div id="fourth">
+		
+	    	<div class="floatLeft">
+	        	<h2>Gallery</h2>
+				<a href="http://www.shuyi.co"class="link">By Shu YI</a></li>
+				<p>It's a galllery. The pieces of fragment comes from simulating forces. The dynamic process brings the building an interesting spacial arrangement.</p>
+			<div class="img">
+			<img src="images/buttonPrev.png" alt="" width="30" height="30" id="buttonFourthPrev">
+			<img src="images/buttonNext.png" width="30" height="30" id="buttonFourthNext">
+		
+	        </div>
+			</div>
+	</div>
+	
+	<div id="forthandfifth">
+		<div class="division">
+		</div> 
+	</div> 
+	
+	<div id="fifth">
+		
+	    	<div class="floatLeft">
+	        	<h2>Park</h2>
+				<a href="http://www.shuyi.co"class="link">By Jiacong Zeng</a></li>
+				<p>It's a park.The dynamic landscape provides varias living experience.</p>
+			<div class="img">
+			<img src="images/buttonPrev.png" alt="" width="30" height="30" id="buttonFifthPrev">
+			<img src="images/buttonNext.png" width="30" height="30" id="buttonFifthNext">
+		
+	        </div>
+			</div>
+	</div>
+	
+	<div id=<"fifthandsixth">
+		<div class="division">
+		</div> 
+	</div> 
+	
+	<div id="sixth">
+			<p>I am making a website about design for future</p>
+	        <h2>Something else</h2>	
+	</div>
+</body>

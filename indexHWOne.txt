@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>JS WORK</title>
+	<style type="text/css">
+	body{
+		background-color:#63cbcc;
+	}
+	#topic{
+	width:1000px;
+    margin: 0 auto;
+	font-family:TechnicBold;
+	color:#ffffff;
+	text-align:center;
+	padding-top:200px;
+	font-size:2em;
+	}
+	#write{
+	font-family:TechnicBold;
+	font-size:2em;
+	}
+	
+	</style>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
+	<script type="text/javascript">
+	var decide=Math.random();
+	var name=prompt("what you hates","paper");
+	var is='is';
+	var fool='aweful';
+	var idiot='silly';
+	var iKnow='i know';
+	function write(){
+	console.log("Math.random() and also var is "+decide);
+	console.log("var  "+iKnow);
+	console.log("prompt result and var as well  "+name);
+	console.log("var  "+is);
+	console.log("var  "+fool);
+	console.log("var  "+idiot);
+	if(decide>=0.5){
+	document.getElementById("write").innerHTML=iKnow+"&nbsp"+name+"&nbsp"+is+"&nbsp"+fool;	
+	}
+	else{
+	document.getElementById("write").innerHTML=iKnow+"&nbsp"+name+"&nbsp"+is+"&nbsp"+idiot;	
+	}
+	}
+	
+	</script>
+</head>
+
+<body onLoad="write()">
+	<div id="topic">
+		<h1>DON'T FEEL ANGRY</h1>
+		<p id="write">ui</p>
+	</div>
+</body>

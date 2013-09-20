@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Max">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var outsideSelect	= 0;
+var selectID = 0;
+// open hidden layer
+function openMenu(id)
+{	
+	cancelDelayClose();
+
+	// close old layer
+	if(selectID)selectID.style.visibility = 'hidden';
+
+	// get new layer and show it
+	selectID = document.getElementById(id);
+	selectID.style.visibility = 'visible';
+
+}
+// close showed layer
+function close()
+{
+	if(selectID)selectID.style.visibility = 'hidden';
+}
+
+// go close timer
+function delayClose()
+{
+	outsideSelect = window.setTimeout(close, 500);
+}
+
+// cancel close timer
+function cancelDelayClose()
+{
+	if(outsideSelect)
+	{
+		window.clearTimeout(outsideSelect);
+		outsideSelect = null;
+	}
+}
+
+</script>
+</head>
+
+<body >
+		<div id="intro">MAX'S HOMEWORK FOR CCLAB</div>
+
+
+	<div class="menu">
+		<a class="menuA" href="#" onmouseover="openMenu('barOne')" onmouseout="delayClose()" >HOMEWORK MENU</a>
+		<div id="barOne" onmouseover="cancelDelayClose()" onmouseout="delayClose()">
+			<a class="itemA" href="webbootcamp/index.html">BOOTCAMP WEB ·</a>
+			<a class="itemA" href="indexHWOne.html">FIRST WEEK·</a>
+			<a class="itemA" href="indexHWTwo.html">SECOND WEEK·</a>
+			<a class="itemA" href="#">THIRD WEEK</a>
+			<a class="itemA" href="#">FOURTH WEEK</a>
+			<a class="itemA" href="#">FIFTH WEEK</a>
+			<a class="itemA" href="#">SIXTH Week</a>
+			<a class="itemA" href="#">SEVENTH Week</a>
+			<a class="itemA" href="#">EIGHTH Week</a>
+			<a class="itemA" href="#">NINETH Week</a>
+			<a class="itemA" href="#">TENTH Week</a>
+			<a class="itemA" href="#">ELEVENTH Week</a>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+margin: 0 auto;
+width:60%;
+background: #382f71;
+}
+ @font-face{ 
+            font-family: "MyriadProBoldCondensed";
+            src: url('http://fontsforweb.com/public/fonts/6603/MyriadProBoldCondensed.eot');
+            src: local("Myriad Pro Bold Condensed"), url('http://fontsforweb.com/public/fonts/6603/MyriadProBoldCondensed.woff') format("woff"), url('http://fontsforweb.com/public/fonts/6603/MyriadProBoldCondensed.ttf') format("truetype");
+        }
+#intro{
+	float:left;
+	margin:0 auto;
+	width:300px;
+	height:250px;
+	background: #e1e2e9;
+	padding:50px 0px 0px 10px;
+	font-family:"MyriadProBoldCondensed";
+	font-size: 3em;
+	color: #22284f;
+	
+}
+.menu
+{	margin: 0 auto;
+	padding: 0 0 0 0px;
+	text-align: center;
+	width:400px;
+	font:  1.1em Myriad Pro;
+	margin-top:50px;
+	margin-left:300px;
+	
+	}
+
+.menuA
+{	display: block;
+	margin:0 auto;
+	padding:10px 0px 10px 0px;
+	width: 200px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	background: #3f67c0;
+	border-bottom:1px solid #5279c9;
+	}
+#barOne{
+	visibility: hidden;
+}
+
+.itemA
+	{	position: relative;
+		display: block;
+		margin:0 auto;
+		padding:10px 0px 10px 0px;
+		width: 200px;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		font: 0.9em Myriad Pro;
+		background: #3f67c0;
+		}
+
+.itemA:hover
+	{	background: #35b5eb;
+	
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>JS WORK</title>
+	<style type="text/css">
+	body{
+	background: url('images/bg.jpg');
+	background-size:100% 100%;
+	text-align:center;
+	
+	}
+	
+
+	h1{
+	color:#ffffff;
+	text-align:center;
+	font-family:TechnicBold;
+	}
+	
+	#topic{
+	width:800px;
+	margin:0 auto;
+	
+	}
+	
+	#inputWords{
+	font-family:TechnicBold;
+	font-size:1.2em;
+	width:500px;
+	margin:0 auto;
+	margin-top:100px;
+	color:#ffffff;
+	text-align: center;
+	
+	}
+	
+	#outputWords{
+	font-family:TechnicBold;
+	font-size:1.2em;
+	width:500px;
+	margin:0 auto;
+	margin-top:800px;
+	margin-bottom:1000px;
+	color:#ffffff;
+	text-align: center;
+
+	}
+	p{
+	margin: 30px 0 8px 0;
+	padding: 0 0 0 0px;
+
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
+	<script type="text/javascript">
+	$(document).ready(function(){
+	var imageChange=$('#c');
+	console.log(imageChange);
+	
+		
+	function hover(button, over, out){
+				
+		button.hover(function(){
+			button.attr('src', over);
+		}, function(){
+			button.attr('src', out);
+		});
+	}
+	
+
+	hover(imageChange, 'images/left.png', 'images/right.png');
+	
+
+});
+	function writeEmail(){
+	window.scrollTo(20,1300);
+	document.getElementById("outOne").innerHTML="Dear "+inputTwo.value;
+	document.getElementById("outTwo").innerHTML="I am writting to schedule a meeting with you,the time is on "+inputThree.value+".The location is "+inputFour.value+".The meeting is for "+inputFive.value;
+	document.getElementById("outThree").innerHTML=inputOne.value;
+	}
+	</script>
+
+</head>
+
+<body>
+	<div id="topic">
+		<h1>Wanna schedule a meeting via email?</h1>
+	</div>
+	<div id="inputWords">
+	<form>
+		<p>what is your name :</p><input id="inputOne" type="text" name="first" style="width: 200px; height: 25px" ></input>
+		<p>what is the reciever`s name :</p><input id="inputTwo" type="text" name="second" style="width: 200px; height: 25px"></input>
+		<p>when would you like to schedual :</p><input id="inputThree" type="text" name="third" style="width: 200px; height: 25px"></input>
+		<p>where :</p><input id="inputFour" type="text" name="fourth" style="width: 200px; height: 25px"></input>
+		<p>the issue:</p><input id="inputFive" type="text" name="fifth" style="width: 200px; height: 25px"></input>
+		
+		
+		
+	</form>
+	<img src="images/right.png" id="c" alt="" width="100" height="100" onclick="writeEmail()"  >
+	</div>
+
+	
+	<div id="outputWords">
+		<p id="outOne" >Dear XXX</p>
+		<p id="outTwo" >I am writting to schedule a meeting with you,the time is on XXX.The location is XXX.The meeting is for XXX.</p>
+		<p id="outThree" >XXX</p>
+	</div>
+
+</body>
